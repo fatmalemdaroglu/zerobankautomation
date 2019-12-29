@@ -1,0 +1,193 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-27T06:57:49.439Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4918674200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify that warning message is displayed when password is not correct",
+        "description": "",
+        "id": "login;verify-that-warning-message-is-displayed-when-password-is-not-correct",
+        "after": [
+          {
+            "result": {
+              "duration": 678714800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1110245900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 947995800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters \"wrong_username\" username and \"wrong_password\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong_username\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"wrong_password\"",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 122221700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user verifies that \"Login and/or password are wrong.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login and/or password are wrong.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_message_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative_test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-27T06:57:57.327Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3594796700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify that warning message is displayed when username or password are blank",
+        "description": "",
+        "id": "login;verify-that-warning-message-is-displayed-when-username-or-password-are-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 681807200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1175931700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 743219600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enters \"\" username and \"\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 120547100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user verifies that \"Login and/or password are wrong.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login and/or password are wrong.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefinitions.user_verifies_that_message_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative_test"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As user, I want to to be able to login into zerobank under different roles with username and password.",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
